@@ -44,14 +44,5 @@ function updateDisplay() {
 
 window.onload = () => {
     updateDisplay();
-    // document.getElementById('clear').addEventListener('click', clearDisplay);
-    // document.getElementById('equals').addEventListener('click', calculate);
-    // document.querySelectorAll('.number').forEach(button => {
-    //     button.addEventListener('click', () => appendNumber(button.textContent));
-    // });
-    // document.querySelectorAll('.operator').forEach(button => {
-    //     button.addEventListener('click', () => appendOperator(button.textContent));
-    // });
-    // document.getElementById('dot').addEventListener('click', appendDot);
 }
     
