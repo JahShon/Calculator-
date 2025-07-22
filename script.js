@@ -17,6 +17,7 @@ function appendDot() {
         display += '.';
         updateDisplay();
     }
+}
 
 function clearDisplay() {
     display = '';
@@ -35,7 +36,7 @@ function calculate() {
         setTimeout(clearDisplay, 1000);
     }
 }
-}
+
 
 function updateDisplay() {
     document.getElementById('display').value = display;
