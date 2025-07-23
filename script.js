@@ -46,3 +46,23 @@ window.onload = () => {
     updateDisplay();
 }
     
+document.addEventListener('keydown', handleKeyPress);
+
+function handleKeyPress(event) {
+    const key = event.key;
+    if (key >= '0' && key <= '9') {
+        appendNumber(key);
+    } else if (['+', '-', '*', '/'].includes(key)) {
+        appendOperator(key);
+    } else if (key === '.') {
+        appendDot();
+    } else if (key === 'Enter') {
+        calculate();
+    } else if (key === 'Escape') {
+        clearDisplay();
+    }  else if (key === 'Backspace') {
+        display = display.slice(0, -1);
+        updateDisplay();
+    }
+
+}
